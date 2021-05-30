@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var input_result= findViewById<EditText>(R.id.input_radius);
+        var input_result= findViewById<EditText>(R.id.editTextTextPersonName);
         var btn= findViewById<Button>(R.id.btn);
         var txt= findViewById<TextView>(R.id.textView2);
 
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             var a:Editable= input_result.text
             var b:String = a.toString()
             var radius:Double=b.toDouble()
-            var area = pi * radius * radius
+            var area:Double = pi * radius * radius
             txt.setText("Result : $area")
         })
     }
