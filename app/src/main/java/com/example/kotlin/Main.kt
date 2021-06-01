@@ -1,14 +1,21 @@
 package com.example.kotlin
 
-fun main(){
-    var n = 11
-    var res:String =if(n>9) "hello " else "world"
+import android.icu.number.IntegerWidth
 
-    res=when (n){
-        1 ->("hello")
-        in 2..10 ->("world")
-        11,12,13 -> ("test")
-        else -> (" no")
+fun main(){
+    var input:String = readLine()!!
+    var n:Int = input.toInt()
+    var i:Int=0
+
+    while (i<n) {
+        for (i in 1..n-1) {
+            print("$i"+ '@')
+
+
+        }
+        i++
+        break;
+
     }
-    print(res)
+
 }
