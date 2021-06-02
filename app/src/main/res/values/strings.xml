@@ -7,4 +7,12 @@
         <item>Blue</item>
     </string-array>
 
+    <string name="app">operator</string>
+    <string-array name="array_operators">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
+
 </resources>

@@ -2,20 +2,14 @@ package com.example.kotlin
 
 import android.icu.number.IntegerWidth
 
+
+fun add(n:Int ,n2:Int):Int{
+    val sum=n+n2
+    return sum.toInt()
+}
 fun main(){
-    var input:String = readLine()!!
-    var n:Int = input.toInt()
-    var i:Int=0
-
-    while (i<n) {
-        for (i in 1..n-1) {
-            print("$i"+ '@')
-
-
-        }
-        i++
-        break;
-
-    }
-
+    var j:Int = 2
+    var k : Int =5
+var i :Int = add(j,k)
+print(i)
 }
